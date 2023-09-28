@@ -15,15 +15,32 @@
 }
 
 body{
-    background-color: mintcream;
+    background-color: #ffffff;
     overflow-x: hidden;
 }
 
 .box{
-    border: 2px black solid;
-    border-radius: 5px;
+    background-color: #efefef;
+    border-radius: 15px;
     margin: 10px;
     transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.subtitles{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.skills{
+    background: linear-gradient(90deg, rgba(247, 88, 31, 0.5) 0%, rgba(184, 44, 37, 0) 90%);
+    text-align: center
+}
+
+.presentation{
+    background: linear-gradient(90deg, rgba(183, 44, 37, 0.5) 0%, rgba(184, 44, 37, 0) 90%);
+    text-align: center;
 }
 
 /*box:hover{
@@ -31,62 +48,6 @@ body{
     box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.2);
 }
 */
-header{
-    background-color: #000000;
-    color: white;
-
-}
-
-header h2 {
-    padding: 10px 0;
-    text-align: center;
-    width: 100vw;
-
-}
-
-header ul {
-    display: flex;
-    justify-content: center;
-    font-family: "Arial", Gadget, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-header ul li {
-    display: flex;
-    align-items: center;
-    height: 60px;
-}
-
-header ul li a {
-    padding: 20px 30px;
-    color: white;
-}
-
-
-header ul li:hover{
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-}
-
-header ul li:nth-child(1){
-    background-color: #a6a6a6;
-}
-
-header ul li:nth-child(2){
-    background-color: #b82c25;
-}
-
-header ul li:nth-child(3){
-    background-color: #f9581f;
-}
-
-header ul li:nth-child(4){
-    background-color: #22a5be;
-}
-
-header ul li:nth-child(5){
-    background-color: #97e187;
-}
 
 main{
     margin: 30px 10px !important;
@@ -97,7 +58,7 @@ main{
 
 .main__title{
     text-align: center;
-    /*border-bottom: 3px #bbbbbb solid;*/
+    border-bottom: 3px #bbbbbb solid;
     width: 80%;
     padding: 20px;
 
@@ -122,6 +83,14 @@ main{
     gap: 10px;
 }
 
+.profil__info ul li:before{
+    content: "•";
+    color: #363636;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
 .main__skills{
     width: 80%;
     padding: 20px;
@@ -131,12 +100,40 @@ main{
 
 }
 
-.main__projects, .main__competences, .main__formation{
+.main__professionnal-projects, .main__competences, .main__formation,
+.main__about{
     width: 100%;
     padding: 10px;
 }
 
+.competences__languages, .competences__softwares{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    align-items: baseline;
+    padding-bottom: 10px;
+}
 
+.formation__info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
+}
+
+.gridbox:nth-child(odd){
+    border-right: 2px black solid;
+    text-align: center;
+}
+
+
+.gridbox:nth-child(even){
+    margin-inline: 10px;
+}
+
+.gridbox{
+    height: 100px;
+    width: 100%;
+}
 
 @media (max-width: 767px) {
 
