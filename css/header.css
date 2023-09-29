@@ -35,10 +35,6 @@ header ul li:hover{
 
 
 header ul li:nth-child(1){
-    background-color: #a6a6a6;
-}
-
-header ul li:nth-child(1){
     background-color: #b82c25;
 }
 
@@ -50,6 +46,6 @@ header ul li:nth-child(3){
     background-color: #22a5be;
 }
 
-header ul li:nth-child(5){
-    background-color: #97e187;
+header ul li:nth-child(4){
+    background-color: #92f17c;
 }

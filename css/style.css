@@ -34,6 +34,12 @@ body{
     border-radius: 15px;
 }
 
+/*
+
+Titre de chacune des pages
+
+ */
+
 .skills{
     border: 2px #f7581f solid;
     color: #f7581f;
@@ -51,6 +57,14 @@ body{
     color: #22a4bd;
     text-align: center
 }
+
+.contact{
+    border: 2px #91ef7b solid;
+    color: #91ef7b;
+    text-align: center
+}
+
+
 
 /*box:hover{
     transform: translateY(-10px);
@@ -99,7 +113,7 @@ main{
     width: 1em;
 }
 
-.main__skills{
+.main__infos{
     width: 80%;
     padding: 20px;
     display: flex;
@@ -108,8 +122,21 @@ main{
 
 }
 
+
+.main__contact .inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.main__contact .inputs textarea{
+    height: 80px;
+    resize: vertical;
+}
+
 .main__professionnal-projects, .main__competences, .main__formation,
-.main__about, .main__projects, .project{
+.main__about, .main__projects, .main__contact, .project{
     width: 100%;
     padding: 10px;
 }
