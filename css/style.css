@@ -25,7 +25,7 @@ body{
     border-radius: 15px;
     margin: 10px;
     padding: 10px;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
     margin-bottom: 30px;
 }
 
@@ -65,13 +65,10 @@ Titre de chacune des pages
     text-align: center
 }
 
-
-
 .box:hover{
     transform: translateY(-10px);
     box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.2);
 }
-
 
 img{
     width: 40px;
