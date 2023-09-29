@@ -23,6 +23,7 @@ body{
     background-color: #efefef;
     border-radius: 15px;
     margin: 10px;
+    padding: 10px;
     transition: 0.3s;
     margin-bottom: 30px;
 }
@@ -34,13 +35,21 @@ body{
 }
 
 .skills{
-    background: linear-gradient(90deg, rgba(247, 88, 31, 0.5) 0%, rgba(184, 44, 37, 0) 90%);
+    border: 2px #f7581f solid;
+    color: #f7581f;
     text-align: center
 }
 
 .presentation{
-    background: linear-gradient(90deg, rgba(183, 44, 37, 0.5) 0%, rgba(184, 44, 37, 0) 90%);
-    text-align: center;
+    border: 2px #b72c25 solid;
+    color: #b72c25;
+    text-align: center
+}
+
+.projects{
+    border: 2px #22a4bd solid;
+    color: #22a4bd;
+    text-align: center
 }
 
 /*box:hover{
@@ -58,7 +67,6 @@ main{
 
 .main__title{
     text-align: center;
-    border-bottom: 3px #bbbbbb solid;
     width: 80%;
     padding: 20px;
 
@@ -101,7 +109,7 @@ main{
 }
 
 .main__professionnal-projects, .main__competences, .main__formation,
-.main__about{
+.main__about, .main__projects, .project{
     width: 100%;
     padding: 10px;
 }
