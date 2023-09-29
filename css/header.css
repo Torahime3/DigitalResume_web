@@ -20,11 +20,13 @@ header ul {
 header ul li {
     display: flex;
     align-items: center;
-    height: 60px;
+    justify-content: center;
+    height: 25px;
+    width: 25%;
 }
 
 header ul li a {
-    padding: 20px 30px;
+    padding: 14px 50%;
     color: white;
 }
 

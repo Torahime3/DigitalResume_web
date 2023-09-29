@@ -14,10 +14,10 @@
     <h2>nathan dulac</h2>
     <nav>
         <ul>
-            <li><a href="index.html">P1</a></li>
-            <li><a href="skills.html">P2</a></li>
-            <li><a href="projects.html">P3</a></li>
-            <li><a href="contact.html">P4</a></li>
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="contact.html">Contacts</a></li>
         </ul>
     </nav>
 </header>
@@ -30,41 +30,65 @@
         </h1>
     </div>
 
-    <div class="main__infos">
+    <div class="main__infos__projects">
 
-        <h2 class="subtitles projects">Portail d'Équipe d'Intégration (WEB)</h2>
+
         <div class="main__projects box">
+            <h2 class="subtitles projects">Portail d'Équipe d'Intégration (WEB)</h2>
             <details>
-                <summary>Cliquez pour dérouler</summary>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam
-                    ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae
-                    aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl.
-                </p>
+                <summary>↓</summary>
+                <div class="project">
+                    <h3>Présentation du projet</h3>
+                    <p class="project__presentation">En tant que développeur principal sur le portail d'intégration Potin. Ma mission est de proposer un système de "news" pour les équipes n'étant pas aller sur le site depuis longtemps, ajouter lors de la connexion une pop-up avec le titre de la nouveauté, la date de publication et son contenu. La news doit pouvoir contenir du texte enrichis et l'historique des news doit être affiché sur la page d'accueil.
+                        Le tout doit bien respecter la philosophie DevOps en utilisant le framework Django pour le back-end et NuxtJS/VueJS pour le front-end.
+                        La feature doit être développer sur une autre branche puis une fois terminé, celle-ci doit être commit afin de réaliser une série de tests d'une "pipeline" et vérifier qu'il n'y a bien aucune erreur. Une fois fait, il faut demander à merger la feature sur la branche principale et après vérification d'un Lead Tech, si celui-ci accepte, elle peut être merger.
+                        Ma seconde mission est de via le Kanban, traiter une demande remontant un bug ou une feature beaucoup demandé sur Potin, de m'attribuer la demande et de la réaliser.
+                    </p>
+                    <!--<div><img src="assets/projects/potin/wsl.webp" width="50"></div>
+                    <div><h2>Salut</h2><p>Description</p></div>
+                    <div></div>
+                    <div></div>-->
+                </div>
             </details>
         </div>
 
-        <h2 class="subtitles projects">Réservations de salles (WEB)</h2>
+
         <div class="main__projects box">
+            <h2 class="subtitles projects">Réservations de salles (WEB)</h2>
             <details>
-                <summary>Cliquez pour dérouler</summary>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam
-                    ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae
-                    aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl.
-                </p>
+                <summary>↓</summary>
+                <div class="project">
+                    <h3>Présentation du projet</h3>
+                    <p class="project__presentation">Valres a décidé de développer une application web permettant aux clients de réserver des salles et de voir les salles réservés, le site doit être fait en HTML/CSS/PHP et doit suivre le patron de conception MVC.
+                        Le site doit posséder des interfaces différentes en fonction du type d'utilisateurs (Administrateur, Secrétariat, Responsable, visiteur), il doit être possible de réserver une salle pour un client en étant responsable et celle-ci doit être validé par le secrétariat.
+                        En étant administrateur il doit être possible de gérer tous les utilisateurs, de le supprimer, de changer leur rôle ou d'en ajouter.
+                        Il doit également être possible d'exporter les utilisateurs au format XML en étant administrateur
+                        Un jeu de données nous est octroyer afin de participer à l'évolution de celles-ci
+                    </p>
+                    <!--<div><img src="assets/projects/potin/wsl.webp" width="50"></div>
+                    <div><h2>Salut</h2><p>Description</p></div>
+                    <div></div>
+                    <div></div>-->
+                </div>
             </details>
         </div>
 
-        <h2 class="subtitles projects">Gestion des adhérents (SOFT)</h2>
+
         <div class="main__projects box">
+            <h2 class="subtitles projects">Gestion des adhérents (SOFT)</h2>
             <details>
-                <summary>Cliquer pour dérouler</summary>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam
-                    ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae
-                    aliquam ultricies, nunc nisl ultricies nunc, vitae aliquam nisl nisl vitae nisl.
-                </p>
+                <summary>↓</summary>
+                <div class="project">
+                    <h3>Présentation du projet</h3>
+                    <p class="project__presentation">La Maison des Ligues a décidé de développer une application de bureau permettant la gestion des adhérents des clubs.
+                        Le logiciel doit permettre de créer des adhérents, les modifier, les supprimer, il faut également pouvoir les attribuer à un club et à une catégorie afin d'obtenir le montant de leur adhésions
+                        Les clubs peuvent réserver du matériel sur une durée donné et un historique pour chaque club est disponible. Ces données peuvent être importé ou exportés via un fichier XML
+                    </p>
+                    <!--<div><img src="assets/projects/potin/wsl.webp" width="50"></div>
+                    <div><h2>Salut</h2><p>Description</p></div>
+                    <div></div>
+                    <div></div>-->
+                </div>
             </details>
         </div>
 
@@ -77,9 +101,15 @@
         Contact
     </h3>
     <div class="footer__icons">
-        <img src="assets/img/e-mail.png" alt="e-mail">
-        <img src="assets/img/linkedin.png" alt="linkedin">
-        <img src="assets/img/phone.png" alt="phone">
+        <a href="mailto:nathan.dulac@epitech.eu">
+            <img src="assets/img/e-mail.png" alt="e-mail">
+        </a>
+        <a href="https://www.linkedin.com/in/nathan-dulac-2aa654257/" target="_blank">
+            <img src="assets/img/linkedin.png" alt="linkedin">
+        </a>
+        <a>
+            <img src="assets/img/phone.png" alt="phone" title="07 82 21 09 86">
+        </a>
     </div>
 </footer>
 

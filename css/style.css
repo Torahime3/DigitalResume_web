@@ -16,6 +16,7 @@
 
 body{
     background-color: #ffffff;
+    font-family: Calibri, serif;
     overflow-x: hidden;
 }
 
@@ -28,10 +29,10 @@ body{
     margin-bottom: 30px;
 }
 
-.subtitles{
-    width: 100%;
+.subtitles{;
     padding: 5px;
     border-radius: 15px;
+    margin-bottom: 10px;
 }
 
 /*
@@ -66,11 +67,21 @@ Titre de chacune des pages
 
 
 
-/*box:hover{
+.box:hover{
     transform: translateY(-10px);
     box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.2);
 }
-*/
+
+
+img{
+    width: 40px;
+}
+
+.profil__photo{
+    width: 180px;
+    object-fit: contain;
+    border-radius: 15px;
+}
 
 main{
     margin: 30px 10px !important;
@@ -83,6 +94,7 @@ main{
     text-align: center;
     width: 80%;
     padding: 20px;
+    border-bottom: 3px #2a2a2a solid;
 
 }
 
@@ -94,8 +106,16 @@ main{
 
 }
 
-.profil__info{
+.profil__container{
     display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profil__info{
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .profil__info ul {
@@ -113,7 +133,7 @@ main{
     width: 1em;
 }
 
-.main__infos{
+.main__infos__skills, .main__infos__presentation, .main__infos__projects, .main__infos__contact{
     width: 80%;
     padding: 20px;
     display: flex;
@@ -127,29 +147,63 @@ main{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    gap: 10px;
+}
+
+.main__contact .inputs input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main__contact .inputs:last-child{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main__contact .inputs input[type="submit"]{
+    border: 2px #91ef7b solid;
+    width: 20%;
+}
+
+.main__contact .inputs input[type="reset"]{
+    border: 2px #b72c25 solid;
+    width: 20%;
+}
+
+.main__contact .inputs input[type="submit"]:hover{
+    background-color: #91ef7b;
+}
+
+
+.main__contact .inputs input[type="reset"]:hover{
+    background-color: #b72c25;
 }
 
 
 .main__contact .inputs textarea{
     height: 80px;
     resize: vertical;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+
 .main__professionnal-projects, .main__competences, .main__formation,
-.main__about, .main__projects, .main__contact, .project{
+.main__about, .main__projects, .main__contact{
     width: 100%;
     padding: 10px;
 }
 
-.competences__languages, .competences__softwares{
-    display: flex;
+.competences__languages, .competences__softwares, .competences__stack{
     gap: 10px;
-    overflow-x: scroll;
     align-items: baseline;
     padding-bottom: 10px;
 }
 
 .formation__info{
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 10px;
@@ -166,10 +220,97 @@ main{
 }
 
 .gridbox{
-    height: 100px;
+    height: 60%;
     width: 100%;
 }
 
-@media (max-width: 767px) {
+details summary{
+    text-align: center;
+}
+
+
+@media (min-width: 767px) and (max-width: 1024px) {
+
+    main .main__title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .profil__photo{
+        width: 150px;
+    }
+
+    img{
+        width: 40px;
+    }
+
+    .main__infos__skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .main__competences, .main__formation, .main__professionnal-projects{
+        height: 90%;
+    }
+
+    .main__competences {
+        overflow-x: auto;
+    }
+
+
+    .main__professionnal-projects{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    img{
+        width: 50px;
+    }
+
+    .main__infos__skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .main__competences, .main__formation, .main__professionnal-projects{
+        height: 90%;
+    }
+
+    .main__competences {
+        overflow-x: auto;
+    }
+
+
+    .main__professionnal-projects{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .project{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .project h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .project .project__presentation {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /*border-bottom: 2px black solid;
+        margin-bottom: 20px;
+        padding-bottom: 20px;*/
+    }
 
 }
