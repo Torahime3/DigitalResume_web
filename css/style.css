@@ -59,6 +59,34 @@ Titre de chacune des pages
     transition: background-color 0.3s;
 }
 
+progress {
+    width: 100%;
+    height : 10px;
+    border: 2px #eaeaea solid;
+    border-radius: 15px;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 15px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #efefef;
+    border-radius: 15px;
+}
+
+.progress__french::-webkit-progress-value {
+    background-color: deepskyblue;
+}
+
+.progress__english::-webkit-progress-value {
+    background-color: yellow;
+}
+
+.progress__spanish::-webkit-progress-value {
+    background-color: orange;
+}
+
 .projects{
     border: 2px #22a4bd solid;
     color: #22a4bd;
