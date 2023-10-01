@@ -23,10 +23,9 @@ body{
 .box{
     background-color: #efefef;
     border-radius: 15px;
-    margin: 10px;
     padding: 10px;
     transition: box-shadow 0.3s;
-    margin-bottom: 30px;
+    margin: 10px 10px 30px;
 }
 
 .box:hover{
@@ -39,6 +38,7 @@ body{
     margin-bottom: 10px;
 }
 
+
 /*
 
 Titre de chacune des pages
@@ -48,25 +48,49 @@ Titre de chacune des pages
 .skills{
     border: 2px #f7581f solid;
     color: #f7581f;
-    text-align: center
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
 .presentation{
     border: 2px #b72c25 solid;
     color: #b72c25;
-    text-align: center
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
 .projects{
     border: 2px #22a4bd solid;
     color: #22a4bd;
-    text-align: center
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
 .contact{
     border: 2px #91ef7b solid;
     color: #91ef7b;
-    text-align: center
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.box:hover .presentation{
+    background-color: #b72c25;
+    color: white;
+}
+
+.box:hover .skills{
+    background-color: #f7581f;
+    color: white;
+}
+
+.box:hover .projects{
+    background-color: #22a4bd;
+    color: white;
+}
+
+.box:hover .contact{
+    background-color: #91ef7b;
+    color: white;
 }
 
 
@@ -243,19 +267,6 @@ details summary{
         grid-column-end: 3;
     }
 
-    .main__profil{
-        flex-direction: row;
-    }
-
-    .profil__container{
-        width: 100%;
-    }
-
-    .profil__photo {
-        width: 180px;
-        object-fit: contain;
-        border-radius: 15px;
-    }
 
     img{
         width: 40px;
@@ -295,6 +306,20 @@ details summary{
 
     .profil__container{
         width: 100%;
+    }
+
+    .main__profil{
+        flex-direction: row;
+    }
+
+    .profil__container{
+        width: 100%;
+    }
+
+    .profil__photo {
+        width: 180px;
+        object-fit: contain;
+        border-radius: 15px;
     }
 
     .main__infos__skills{
