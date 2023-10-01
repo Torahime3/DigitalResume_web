@@ -7,7 +7,7 @@ gsap.from(".main__title", {
     ease: "expo.out"
 })
 
-//index.html animations
+//presentation.html animations
 gsap.from(".main__profil", {
     y: 50,
     opacity: 0,

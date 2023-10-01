@@ -14,7 +14,7 @@
     <h2>nathan dulac</h2>
     <nav>
         <ul>
-            <li><a href="index.html">Présentation</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projets</a></li>
             <li><a href="contact.html">Contacts</a></li>
@@ -42,27 +42,27 @@
             <form>
                 <div class="inputs">
                     <label for="nom">Prénom</label>
-                    <input type="text" placeholder="Prénom" id="prenom">
+                    <input type="text" placeholder="Prénom" id="prenom" required>
                 </div>
 
                 <div class="inputs">
                     <label for="nom">Nom</label>
-                    <input type="text" placeholder="Nom" id="nom">
+                    <input type="text" placeholder="Nom" id="nom" required>
                 </div>
 
                 <div class="inputs">
                     <label for="nom">E-mail</label>
-                    <input type="email" placeholder="E-Mail" id="email">
+                    <input type="email" placeholder="E-Mail" id="email" required>
                 </div>
 
                 <div class="inputs">
                     <label for="nom">Message</label>
-                    <textarea></textarea>
+                    <textarea id="message" required></textarea>
                 </div>
 
                 <div class="inputs">
                     <input type="reset" value="Effacer">
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" id="submit" value="Envoyer">
                 </div>
             </form>
         </div>
